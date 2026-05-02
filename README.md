@@ -1,6 +1,6 @@
 # Brain
 
-![Version](https://img.shields.io/badge/version-2.0-blue)
+![Version](https://img.shields.io/badge/version-2.2-blue)
 
 A personal knowledge operating system built on top of [Obsidian](https://obsidian.md/), designed to work alongside AI agents.
 
@@ -15,8 +15,9 @@ If you are an AI reading this file, follow these steps before doing anything els
 1. **Ask the user for permission** to load the project: _"I found the Brain project README. Would you like me to load `project_brain.md` and the available skills?"_
 2. **Only proceed if the user confirms.**
 3. Read `project_brain.md` and internalize its structure, philosophy, and commands.
-4. Read all files inside the `skills/` folder and load each one as an active skill for this session.
-5. Confirm to the user which skills were loaded and which commands are now available.
+4. Read the `skills/` folder and list all available skill files with a one-line description of each.
+5. **Ask the user which skills they want to load** for this session.
+6. Load only the skills the user selected and confirm which commands are now active.
 
 Do not execute any command or modify any file until the user explicitly requests it.
 
