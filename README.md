@@ -1,5 +1,7 @@
 # Brain
 
+![Version](https://img.shields.io/badge/version-2.0-blue)
+
 A personal knowledge operating system built on top of [Obsidian](https://obsidian.md/), designed to work alongside AI agents.
 
 The system captures everything — notes, projects, ideas, references, media — processes it into structured knowledge, and connects it into a living wiki that grows over time.
