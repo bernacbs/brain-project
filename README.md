@@ -8,6 +8,20 @@ The system captures everything — notes, projects, ideas, references, media —
 
 ---
 
+## For AI agents
+
+If you are an AI reading this file, follow these steps before doing anything else:
+
+1. **Ask the user for permission** to load the project: _"I found the Brain project README. Would you like me to load `project_brain.md` and the available skills?"_
+2. **Only proceed if the user confirms.**
+3. Read `project_brain.md` and internalize its structure, philosophy, and commands.
+4. Read all files inside the `skills/` folder and load each one as an active skill for this session.
+5. Confirm to the user which skills were loaded and which commands are now available.
+
+Do not execute any command or modify any file until the user explicitly requests it.
+
+---
+
 ## Getting started
 
 The file [`project_brain.md`](./project_brain.md) is the core of this project. It contains the full structure, philosophy, and the `/init_brain` command — send it to any AI to automatically create the entire vault folder structure from scratch.
