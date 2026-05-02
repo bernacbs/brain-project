@@ -24,3 +24,27 @@ Reusable AI instructions live in the `D01 Skills/` folder. Each skill defines a 
 ---
 
 ## Structure overview
+
+```
+Brain/
+├── _Assets/            Raw files: PDFs, images, audio, video
+├── _Templates/         Note templates
+├── A00 Inbox/          Everything enters here
+├── A01 Processing/     Triage and routing
+├── A02 Anchor Topics/  Navigation hubs (MOCs)
+├── A03 Daily Notes/    Daily log
+├── B01 Projects/       Active project context notes
+├── B02 Ongoing/        Continuous responsibilities
+├── B03 Interests/      Topics followed without obligation
+├── B04 Archive/        Closed loops and old notes
+├── C01 Wiki/           Personal encyclopedia
+├── D00 Claude/         AI agent workspace
+└── D01 Skills/         Skill files ← you are here
+```
+
+---
+
+## Requirements
+
+- [Obsidian](https://obsidian.md/) — for navigating and editing the vault
+- Any AI with file access **or** any chat-based AI (paste the skill file as a prompt)
