@@ -13,7 +13,7 @@
 
 # Brain
 
-![Version](https://img.shields.io/badge/version-2.3-blue)
+![Version](https://img.shields.io/badge/version-2.0-blue)
 
 A personal knowledge operating system built on top of [Obsidian](https://obsidian.md/), designed to work alongside AI agents.
 
@@ -22,6 +22,14 @@ The system captures everything — notes, projects, ideas, references, media —
 ---
 
 ## Getting started
+
+This system is fully autonomous — you don't need to read or understand any of the files to use it.
+
+Just copy and paste the link to this README into any AI chat. The AI will handle everything from there.
+
+```
+https://github.com/bernacbs/brain-project/blob/main/README.md
+```
 
 The file [`project_brain.md`](./project_brain.md) is the core of this project. It contains the full structure, philosophy, and the `/init_brain` command — send it to any AI to automatically create the entire vault folder structure from scratch.
 
