@@ -13,7 +13,7 @@ Generates a **linked knowledge snapshot** with explicit wikilinks, relationships
 ## Configuration
 
 ```yaml
-LANGUAGE: pt-BR
+LANGUAGE: en
 ```
 
 ---

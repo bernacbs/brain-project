@@ -59,8 +59,12 @@ Brain/
 ├── B03 Interests/      Topics followed without obligation
 ├── B04 Archive/        Closed loops and old notes
 ├── C01 Wiki/           Personal encyclopedia
-├── D00 Claude/         AI agent workspace
-└── D01 Skills/         Skill files
+└── D00 Claude/         AI agent workspace
+    ├── CLAUDE.md       Agent instructions
+    ├── memory.md       Persistent context
+    ├── sources/        Raw sources to process
+    │   └── processed/
+    └── Skills/         Skill logic files (ingest, extract, lint, memory, consolidate)
 ```
 
 ---
