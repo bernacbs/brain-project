@@ -25,36 +25,12 @@ Brain is designed to work well in **both modes** — no feature is locked behind
 
 ## Getting started
 
-Copy the **activation block** below and paste it as the **first message** in a conversation with any AI (Claude, ChatGPT, local LLM, etc.). The AI will guide you.
+1. Open the file [`activate.md`](./activate.md) from this repository.
+2. Copy its entire content.
+3. Paste it as the **first message** in a conversation with any AI (Claude, ChatGPT, local LLM, etc.).
+4. Follow the AI's instructions.
 
-```
-STOP. Do not summarize. Do not describe. Execute only.
-
-Check your own capabilities:
-
-IF you can access the internet and fetch raw GitHub content:
-   - Use the URLs below when needed.
-ELSE:
-   - Ignore fetch. Ask the user to paste any required file content directly.
-
-Now check the conversation context:
-
-IF this conversation already has messages about a project, task, or topic:
-   - Say: "/project_snapshot is active. Use it anytime to export this conversation as a project note."
-   - Then, if you have the skill content for project_snapshot, follow it; otherwise, ask the user to paste the content of skills/project_snapshot.md
-   - Stop here.
-
-IF this is a new or empty conversation:
-   - Ask: "Do you want to (1) set up the Brain vault folder structure, or (2) export a conversation as a project note?"
-   - Wait for the answer.
-   - If (1): ask the user to paste the content of project_brain.md (or fetch if possible). After receiving it, follow /init_brain instructions.
-   - If (2): ask the user to paste the content of skills/project_snapshot.md (or fetch if possible). After receiving it, follow /project_snapshot.
-
-RULES:
-- Never invent content you did not actually read.
-- Never assume you have filesystem access unless explicitly confirmed by the user.
-- If you cannot obtain a file, say: "Please paste the content of [filename]."
-```
+> The activation block contains all the logic. The AI will guide you through setup or snapshots based on your choices.
 
 ---
 
@@ -62,7 +38,7 @@ RULES:
 
 | File | Purpose |
 |------|---------|
-| `activate.md` | Standalone activation block (same as above) |
+| `activate.md` | **Activation block** – copy and paste this into any AI chat to start |
 | `project_brain.md` | Vault structure, commands (`/init_brain`, `/brain_status`), configuration, philosophy |
 | `skills/project_snapshot.md` | Command `/project_snapshot` – exports project notes |
 
@@ -92,4 +68,4 @@ Brain/
 ## Requirements
 
 - [Obsidian](https://obsidian.md/) – for navigating and editing the vault
-- Any AI chat (web or local) – paste the activation block above
+- Any AI chat (web or local) – paste the content of `activate.md` as the first message

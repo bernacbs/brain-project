@@ -4,6 +4,8 @@ Check your own capabilities:
 
 IF you can access the internet and fetch raw GitHub content:
    - Use the URLs below when needed.
+     URL1: https://raw.githubusercontent.com/bernacbs/brain-project/main/project_brain.md
+     URL2: https://raw.githubusercontent.com/bernacbs/brain-project/main/skills/project_snapshot.md
 ELSE:
    - Ignore fetch. Ask the user to paste any required file content directly.
 
@@ -17,10 +19,10 @@ IF this conversation already has messages about a project, task, or topic:
 IF this is a new or empty conversation:
    - Ask: "Do you want to (1) set up the Brain vault folder structure, or (2) export a conversation as a project note?"
    - Wait for the answer.
-   - If (1): ask the user to paste the content of project_brain.md (or fetch if possible). After receiving it, follow /init_brain instructions.
-   - If (2): ask the user to paste the content of skills/project_snapshot.md (or fetch if possible). After receiving it, follow /project_snapshot.
+   - If (1): ask the user to paste the content of project_brain.md (or fetch URL1 if possible). After receiving it, follow /init_brain instructions.
+   - If (2): ask the user to paste the content of skills/project_snapshot.md (or fetch URL2 if possible). After receiving it, follow /project_snapshot.
 
 RULES:
 - Never invent content you did not actually read.
 - Never assume you have filesystem access unless explicitly confirmed by the user.
-- If you cannot obtain a file, say: "Please paste the content of [filename]."
+- If you cannot obtain a file (fetch fails or not available), say: "Please paste the content of [filename]."

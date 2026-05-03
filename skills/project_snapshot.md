@@ -4,7 +4,7 @@
 
 ## What is this file
 Defines the command `/project_snapshot`.  
-This is a **script-like instruction**, not a part of the conversation. Do not execute its logic automatically when reading this file. Only execute when the user explicitly types `/project_snapshot`.
+**This is a script-like instruction, not a part of the conversation.** Do not execute its logic automatically when reading this file. Only execute when the user explicitly types `/project_snapshot`.
 
 ---
 
@@ -63,22 +63,19 @@ Before generating anything, verify:
   > "Snapshot saved to B01 Projects/Project-Name.md"
 
 ### If AI has NO filesystem access (chat-only)
-- Output **only the snapshot markdown** – no extra text before or after.
-- Do **not** include instructions like "Copy and paste this..." inside the markdown or as separate message?  
-  *Correction:* Actually, you must output the snapshot and then a **separate line** with the copy instruction. But the snapshot itself must be clean.
+- Output **only the snapshot markdown** – no extra text before or after the markdown block.
+- The snapshot must be a clean markdown document with frontmatter and sections.
+- After the markdown block, on a new line, output the copy instruction:  
+  `Copy this and save as B01 Projects/Project-Name.md`
 
-**Correct chat-only format:**
+**Correct chat-only format example:**
 ```
-[FIRST SNAPSHOT]   (or [UPDATED SNAPSHOT])
+[FIRST SNAPSHOT]
 
---- (frontmatter)
-... snapshot content ...
----
+--- (content)
 
-Copy this and save as B01 Projects/Project-Name.md
+Copy this and save as B01 Projects/My-Project.md
 ```
-
-The instruction line goes **outside** the markdown code block.
 
 ---
 
@@ -91,7 +88,7 @@ The instruction line goes **outside** the markdown code block.
 
 ---
 
-## Output format (same as before, but reinforced)
+## Output format
 
 ```markdown
 ---
